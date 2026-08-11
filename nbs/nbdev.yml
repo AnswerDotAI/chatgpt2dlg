@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "chatgpt2dialog"
+  site-url: "https://AnswerDotAI.github.io/chatgpt2dialog"
+  description: "Convert ChatGPT web conversations into aidialog dialogs"
+  repo-branch: main
+  repo-url: "https://github.com/AnswerDotAI/chatgpt2dialog"

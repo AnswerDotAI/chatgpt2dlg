@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chatgpt2dialog"
+dynamic = ["version"]
+description = "Convert ChatGPT web conversations into aidialog dialogs"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "Apache-2.0"}
+authors = [{name = "Jeremy Howard", email = "info@fast.ai"}]
+keywords = ['nbdev']
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+]
+dependencies = ['fastcore>=1.7', 'python-fastllm>=0.0.38', 'aidialog>=0.0.11']
+
+[project.optional-dependencies]
+dev = ['fastcdp']
+
+[project.urls]
+Repository = "https://github.com/AnswerDotAI/chatgpt2dialog"
+Documentation = "https://AnswerDotAI.github.io/chatgpt2dialog/"
+
+[project.entry-points.nbdev]
+chatgpt2dialog = "chatgpt2dialog._modidx:d"
+
+[project.entry-points.pyskills]
+"chatgpt2dialog.core" = "chatgpt2dialog.core"
+
+[tool.setuptools.dynamic]
+version = {attr = "chatgpt2dialog.__version__"}
+
+[tool.setuptools.packages.find]
+include = ["chatgpt2dialog"]
+
+[tool.nbdev]
+allowed_metadata_keys = ['solveit']
+allowed_cell_metadata_keys = ['solveit_ai']
+
+[tool.chkstyle]
+skip_paths = ["_modidx.py"]
