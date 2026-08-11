@@ -2,7 +2,7 @@ project:
   output-dir: _docs
 
 website:
-  title: "chatgpt2dialog"
+  title: "chatgpt2dlg"
   site-url: "https://AnswerDotAI.github.io/chatgpt2dlg"
   description: "Convert ChatGPT web conversations into aidialog dialogs"
   repo-branch: main

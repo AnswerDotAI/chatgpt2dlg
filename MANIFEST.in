@@ -2,4 +2,4 @@ include pyproject.toml
 include LICENSE
 include README.md
 global-exclude *.pyc
-recursive-include chatgpt2dialog/data *
+recursive-include chatgpt2dlg/data *

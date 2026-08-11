@@ -25,16 +25,16 @@ Repository = "https://github.com/AnswerDotAI/chatgpt2dlg"
 Documentation = "https://AnswerDotAI.github.io/chatgpt2dlg/"
 
 [project.entry-points.nbdev]
-chatgpt2dialog = "chatgpt2dialog._modidx:d"
+chatgpt2dlg = "chatgpt2dlg._modidx:d"
 
 [project.entry-points.pyskills]
-"chatgpt2dialog.core" = "chatgpt2dialog.core"
+"chatgpt2dlg.core" = "chatgpt2dlg.core"
 
 [tool.setuptools.dynamic]
-version = {attr = "chatgpt2dialog.__version__"}
+version = {attr = "chatgpt2dlg.__version__"}
 
 [tool.setuptools.packages.find]
-include = ["chatgpt2dialog"]
+include = ["chatgpt2dlg"]
 
 [tool.nbdev]
 allowed_metadata_keys = ['solveit']
