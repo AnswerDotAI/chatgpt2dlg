@@ -3,7 +3,7 @@ requires = ["setuptools>=64"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "chatgpt2dialog"
+name = "chatgpt2dlg"
 dynamic = ["version"]
 description = "Convert ChatGPT web conversations into aidialog dialogs"
 readme = "README.md"
@@ -21,8 +21,8 @@ dependencies = ['fastcore>=1.7', 'python-fastllm>=0.0.38', 'aidialog>=0.0.11']
 dev = ['fastcdp']
 
 [project.urls]
-Repository = "https://github.com/AnswerDotAI/chatgpt2dialog"
-Documentation = "https://AnswerDotAI.github.io/chatgpt2dialog/"
+Repository = "https://github.com/AnswerDotAI/chatgpt2dlg"
+Documentation = "https://AnswerDotAI.github.io/chatgpt2dlg/"
 
 [project.entry-points.nbdev]
 chatgpt2dialog = "chatgpt2dialog._modidx:d"

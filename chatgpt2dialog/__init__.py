@@ -2,7 +2,7 @@
 
 Modules:
 
-- `chatgpt2dialog.core`: ChatGPT web conversations as dialogs"""
+- `chatgpt2dialog.core`: Convert ChatGPT web shared conversations as dialogs"""
 
 __version__ = "0.0.1"
 
